@@ -1,0 +1,417 @@
+
+/* =====================================
+GLOBAL RESET STREAMLIT
+===================================== */
+
+header {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+.stApp {
+    background-color: #F1FAEE;
+    min-height: 100vh;
+}
+
+
+.st-emotion-cache-wfksaw {
+    align-items: center !important;
+    color: #09500c;
+
+}
+/* =====================================
+CENTER WRAPPER (FIX UTAMA LAYOUT)
+===================================== */
+
+.center-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.st-emotion-cache-tn0cau {
+    align-items: center !important;
+
+}
+
+/* =====================================
+HERO BOX (HOME)
+===================================== */
+
+.hero-box {
+    width: 65%;
+    margin: 0 auto 30px auto;
+    background: rgba(255, 255, 255, 0.432);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+.hero-box h3 {
+    color: #09500c;
+    font-size: clamp(24px, 5vw, 60px);
+    font-weight: 800;
+    font-family: "Plus Jakarta Sans Serif", sans-serif;
+    text-shadow: 2px 2px 4px #bfc0bf;
+    margin-bottom: 6px;
+}
+
+.hero-box p {
+    color: #1f472b;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0;
+}
+
+.st-emotion-cache-1ne20ew{
+    background-color: rgba(189, 189, 189, 0.616);
+    border: transparent;
+    border-radius: 16px;
+}
+
+/* Tombol buah yang dipilih */
+div[data-testid="stButton"] > button[kind="secondary"]{
+    background: transparent;
+    border: none;
+    border-radius: 55px;
+    color: #09500c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: none;
+    padding-top: 5px;
+
+}
+
+/* Tombol buah yang dipilih */
+div[data-testid="stButton"] > button {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+div[data-testid="stButton"] > button[kind="secondary"]:hover{
+    background: #eef9f0;
+    border-radius: 12px;
+    color: #2CBE61;
+   
+}
+
+/* =====================================
+BUTTON PRIMARY
+===================================== */
+/* BUTTON MULAI & PROSES */
+.stButton > button[kind="primary"] {
+    background-color: #09500c !important;
+    color: #e4dcdc !important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    border-radius: 14px;
+    padding: 10px 28px;   /* Atas-bawah | Kiri-kanan */
+    height: auto;         /* Biarkan tinggi mengikuti padding */
+    margin-top: -40px;
+}
+
+@media (max-width:768px){
+
+    .stButton > button[kind="primary"]{
+        width:auto !important;
+        min-width:140px;
+        height:40px;
+        padding:8px 18px;
+        font-size:15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .stButton > button[kind="primary"] {
+        padding: 7px 16px;
+        font-size: 15px;
+    }
+}
+
+.stButton > button[kind="primary"]:hover {
+    background-color: #2E7D32 !important;
+}
+
+/* =====================================
+BUTTON DEFAULT (BUAH)
+===================================== */
+
+.stButton > button {
+    background: transparent;
+    color: #09500c;
+    font-size: 16px;
+    border: none;
+    border-radius: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 10px 14px;
+    width: auto;
+    transition: all 0.25s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.03);
+}
+
+
+.fruit-item{
+    text-align:center;
+}
+
+.fruit-item img{
+    width:80px;
+}
+
+.fruit-name{
+    margin-top:10px;
+    font-size:16px;
+    color:#09500c;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/* Tombol nama buah */
+.stButton > button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 100%;
+    text-align: center !important;
+
+    color: #09500c;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* =====================================
+PAGE TITLE
+===================================== */
+
+div.page-title {
+    color: #09500c;
+    font-size: clamp(22px, 4vw, 55px);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "source sans", sans-serif;
+}
+
+
+
+/* =====================================
+FRUIT GRID FIX (INI KUNCI)
+===================================== */
+
+div.column{
+    color: #09500c;
+    font-size: 20px;
+
+}
+
+.fruit-grid {
+    width: 100%;
+    max-width: 900px;
+    /* margin: 0 auto; */
+}
+
+div.fruit-page {
+    text-align: center;
+}
+
+.fruit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+
+.st-emotion-cache-1o2nani p{
+    font-size: 16px;
+    font-weight: bold;
+    word-break: unset;
+}
+
+.st-emotion-cache-zy6yx3{
+    padding: 42px 22px;
+    min-height: none;
+}
+
+/* IMAGE FIX */
+[data-testid="stImage"] img {
+    width: 100% !important;
+    max-width: 120px !important;
+    height: 120px !important;
+    object-fit: contain;
+    display: block;
+    /* margin: auto; */
+}
+
+[data-testid="column"] {
+    text-align: center;
+}
+
+.proses-button-wrapper .stButton > button {
+    background-color: #09500c;
+    color: #c1d739;
+    border-radius: 15px;
+    width: 180px;
+    height: 45px;
+}
+/* =====================================
+RESULT BOX
+===================================== */
+
+div.hasil-title-box{
+    background: rgba(189, 189, 189, 0.616);
+    color: #09500c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "source sans", sans-serif;
+    font-size: clamp(20px, 4vw, 40px);
+    border-radius: 30px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+div.green-box {
+    background: #09500c;
+    color: #F1FAEE;
+    font-weight: bold;
+    font-family: "source sans", sans-serif;
+    font-size: clamp(20px, 4vw, 30px);
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* =====================================
+CARD
+===================================== */
+
+.card-box {
+    background: #c1d739;
+    border-radius: 20px;
+    padding: 18px;
+}
+
+.card-title {
+    color: #09500c;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 700;
+}
+
+.card-text {
+    color: #4F5D75;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =====================================
+RESULT TEXT
+===================================== */
+
+.result-box {
+    color: #09500c;
+    font-size: clamp(28px, 6vw, 52px);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.fruit-title p{
+    font-weight: 700;
+    color: #09500c;
+    font-size: 36px;
+    margin: 0;
+}
+
+.fruit-text{
+    font-size: 22px;
+}
+/* =====================================
+RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .st-emotion-cache-zy6yx3{
+    padding: 24px 24px 32px 24px;
+}
+
+    .hero-box {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .hero-box h3 {
+        font-size: 26px;
+    }
+
+    .hero-box p {
+        font-size: 14px;
+    }
+
+    .stButton > button[kind="primary"] {
+        font-size: 16px;
+        height: 50px;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .stButton > button {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .fruit-grid {
+        max-width: 100%;
+    }
+
+    [data-testid="stImage"] img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    div.page-title {
+        font-size: 20px;
+    }
+}
+
+/* TOMBOL MULAI TENGAH */
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-wrapper .stButton {
+    display: flex;
+    justify-content: center;
+}
